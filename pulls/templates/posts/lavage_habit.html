@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon projet</title>
+
+  <link href=" {% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href=" {% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+
+  <link href=" {% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+    {% block content %}
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container">
+          <div class="header-container d-flex align-items-center justify-content-between">
+            <div class="logo">
+              <h1 class="text-light"><a href="{% url 'index' %}"><span>Brigitte</span></a></h1>
+              <!-- Uncomment below if you prefer to use an image logo -->
+              <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+    
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto active" href="{% url 'index' %}">Acueil</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'apropos' %}">APROPOS</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'Nos_services' %}"> Nos Services</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Brigitte recrute </a></li>
+
+               
+                <li><a class="nav-link scrollto" href="{% url 'nous_contacter' %}"> Nous Contacter</a></li>
+                <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+    
+          </div><!-- End Header Container -->
+        </div>
+      </header>
+
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+      <section>
+
+        
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="p-5 btn btn-success">
+                    <h1 class="mb-3">BIENVENU!</h1>
+                    <h4 class="mb-3">Lorsque vous nous contacter, 
+                        Brigitte, se charge de resoudre votre probleme, en vous mettant en contact avec la bonne personne , 
+                        avec le profile apprprié, que nous selectionnerons apres la plus grande efficasité   et le plus grand 
+                        respect des normes etablit par la societé .
+                       Brigitte est la solution a vos probleme !!!</h4>
+                    <!-- <a class="btn btn-primary" href="#" role="button">Learn more</a> <br> -->
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-light p-5">
+          <div class="section-title" data-aos="fade-left">
+            <h2>Lavage d'habit</h2>
+          </div>
+
+
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-6 demo-content" >
+                  <img src="https://blog.soyezbcbg.com/wp-content/uploads/2018/10/lavage-a-la-main-2.jpg" alt="">
+
+                </div>
+                <div class="col-md-6 demo-content" >
+                  <h2 class="bib"> Cette section  concerne les renseignements pour le processus
+                   du service de lavage de vetement</h2> <br>
+                   <br>
+                                 <hr class="my-4"> 
+                    <p class="bibi">Nous allions notre savoir-faire à une efficacité qui dépassera vos attentes.
+                      Nous intervenons pour resoudre votre besoin en fonction de votre  choix. 
+                      Les équipes de Brigitte suivent une méthode précise pour le lavage de vos vetement 
+                       ,en vous assurant un travail bien fait. Si nos professionnels voient
+                        qu’ils peuvent en faire un peu plus, ils n’hésiteront
+                      pas à s’assurer que leur travail fait votre bonheur !</p>
+                </div>
+    
+            </div>
+          </div>
+
+
+
+             
+           
+            <a class=" btn btn-success btn-lg" href="{% url 'form_adheration' %}" role="button">estimation en ligne</a>
+          </div>
+
+
+        
+
+
+        
+
+
+        
+            <!-- <img src="https://cdn.pixabay.com/photo/2015/01/29/09/38/clothes-line-615962_1280.jpg" alt="" height="400px"> -->
+       
+
+
+          
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer id="footer">
+
+        <div class="footer-top ">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6 footer-contact">
+                <h3>BIBI</h3>
+                <p>
+                  BURKINA<br>
+                  FASO<br>
+                 <br>
+                  <strong>Telephone:</strong><a href="tel:+22673693576">+226 73 69 35 76</a> <br>
+                  <strong>Email:</strong>dambrebrigitte9@gmail.com <br>
+                </p>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-links">
+                <h4>Lien Utiles</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-links">
+                <h4>Nos Services</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                </ul>
+              </div>
+    
+           
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container d-md-flex py-4 btn btn-secondary">
+    
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              &copy; Copyright@ 2022 <strong><span>BIBI</span></strong>. Tout Droit Reservé!!!
+            </div>
+            <div class="credits">
+              createur <a href="mailto:dambrebrigitte9@gmail.com">dambrebrigitte9</a>
+            </div>
+          </div>
+          <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+      <script src=" {% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+      <script src=" {% static 'assets/vendor/aos/aos.js' %}"></script>
+      <script src=" {% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      <script src=" {% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+      <script src=" {% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+      <script src=" {% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+      <script src=" {% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    
+      <script src=" {% static 'assets/js/main.js' %}"></script>
+      
+    {% endblock content %}
+    
+</body>
+</html>

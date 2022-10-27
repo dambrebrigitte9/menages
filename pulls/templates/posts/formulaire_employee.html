@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>mon projet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href=" {% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href=" {% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href=" {% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href=" {% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bethany - v4.9.1
+  * Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+{% block content %}
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="{% url 'index' %}"><span>Brigitte</span></a></h1>
+           </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="{% url 'index' %}">Acueil</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'apropos' %}">APROPOS</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'Nos_services' %}"> Nos Services</a></li>
+			<li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Brigitte recrute </a></li>
+
+            
+            <li><a class="nav-link scrollto" href="{% url 'nous_contacter' %}"> Nous Contacter</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header>
+
+<section>
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<div class="p-5 btn btn-success">
+				<!-- <h1 class="mb-3">BIENVENU!</h1> -->
+        <h1>	EMPLOI D'ENTRETIENT MENAGER</h1>
+				<h1 class="mb-3"> Brigitte , offre sur le bouton de recrutement, 
+					le recrutement de personne disposant des profile liée 
+					sur sa page des Services .</h1>
+				
+					
+				
+				<!-- <a class="btn btn-primary" href="#" role="button">Learn more</a> <br> -->
+			   
+			</div>
+		</div>
+	</div>
+	<br>
+</section>
+	
+
+	
+	<section id="portfolio" class="portfolio">
+        <div class="container">
+  
+          <div class="section-title" data-aos="fade-left">
+            <h2>Nos Exigences</h2>
+			<p>-Capable de bien travailler avec un minimum de supervision de la part de l'entreprise</p>
+			<p>-Aimer le travail physique</p>
+			<p>-Etre de bonne moralité</p>
+			<p>-Etre ponctuel et savoir ce qu'on veux</p>
+			<p>-Etre profesionnel</p>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+		  <div> Chez Brigitte, on forme une belle équipe qui grandit bien!   
+			<a class=" btn btn-success btn-lg" href="{% url 'formulaire_recrute' %}" role="button">je m'inscris</a>
+		  </div>
+		</div>
+   </section>
+
+   
+		
+   
+
+
+
+  <script src=" {% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src=" {% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src=" {% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src=" {% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src=" {% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src=" {% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src=" {% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <script src=" {% static 'assets/js/main.js' %}"></script>
+  
+{% endblock content %}
+
+</body>
+</html>

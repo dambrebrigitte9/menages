@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon projet</title>
+     <!-- Favicons -->
+        <link href=" {% static 'assets/img/favicon.png' %}" rel="icon">
+        <link href=" {% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href=" {% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+        <link href=" {% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href=" {% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+        <link href=" {% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+        <link href=" {% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+        <link href=" {% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+        <link href=" {% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href=" {% static 'assets/css/style.css' %}" rel="stylesheet">
+
+        
+</head>
+<body>
+{% block content %}
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="{% url 'index' %}"><span>Brigitte</span></a></h1>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="{% url 'index' %}">Acueil</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'apropos' %}">APROPOS</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'Nos_services' %}"> Nos Services</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Brigitte recrute </a></li>
+
+           
+            <li><a class="nav-link scrollto" href="{% url 'nous_contacter' %}"> Nous Contacter</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header>
+
+  <section>
+    
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <div class="p-5 btn btn-success">
+              <h1 class="mb-3">BIENVENU!</h1>
+              <h4 class="mb-3">Lorsque vous nous contacter, 
+                  Brigitte, se charge de resoudre votre probleme, en vous mettant en contact avec la bonne personne , 
+                  avec le profile apprprié, que nous selectionnerons apres la plus grande efficasité   et le plus grand 
+                  respect des normes etablit par la societé .
+                 Brigitte est la solution a vos probleme !!!</h4>
+             
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+  
+          <div class="section-title" data-aos="fade-left">
+            <h2>NOS SERCICES DISPONIBLES</h2>
+          </div>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Totalité de nos services</li>
+                <li data-filter=".filter-app">LAVAGES D'HABITS</li>
+                <li data-filter=".filter-card">netoyage DE MAISON</li>
+                <li data-filter=".filter-web">NETOYEZ LES FAUTEUILLES</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src=" {% static 'assets/img/portfolio/portfolio-0.jpg ' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                 <a href="{% url 'lavage_habit' %}"> <h4> lavage d'habit</h4></a>
+                  <p></p>
+                  <div class="portfolio-links">
+                    <a href="{% url 'lavage_habit' %}" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src=" {% static 'assets/img/portfolio/portfolio-1.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>NETOYEZ FAUTEUILLES EN CUIR</h4>
+                  <p></p>
+                  <div class="portfolio-links">
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src=" {% static 'assets/img/portfolio/portfolio-2.jpeg' %}" height="250px" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Netoyez maison</h4>
+                  <div class="portfolio-links">
+                    <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            
+          </div>
+  
+        </div>
+
+
+       
+      </section>
+
+    </div>
+    
+  </section>
+
+  <script src=" {% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src=" {% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src=" {% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src=" {% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src=" {% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src=" {% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src=" {% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <script src=" {% static 'assets/js/main.js' %}"></script>
+
+
+  {% endblock content %}
+    
+</body>
+</html>

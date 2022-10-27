@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form-v6 by Colorlib</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/nunito-font.css">
+	<link href=" {% static 'assets/img/favicon.png' %}" rel="icon">
+	<link href=" {% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+	<!-- Vendor CSS Files -->
+	<link href=" {% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+	<link href=" {% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href=" {% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+	<link href=" {% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+	<link href=" {% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+	<link href=" {% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+	<link href=" {% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+     
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Template Main CSS File -->
+	<link href=" {% static 'assets/css/style.css' %}" rel="stylesheet">
+	
+	<style>
+		input{
+			width: 150px;
+			border: none;
+		}
+
+		.emplace{
+			margin-top: 20px;
+		}
+	</style>
+    
+</head>
+<body class="form-v6">
+	{% block content %}
+	<header id="header" class="fixed-top d-flex align-items-center">
+		<div class="container">
+		  <div class="header-container d-flex align-items-center justify-content-between">
+			<div class="logo">
+			  <h1 class="text-light"><a href="{% url 'index' %}"><span>Brigitte</span></a></h1>
+			  <!-- Uncomment below if you prefer to use an image logo -->
+			  <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+			</div>
+	
+			<nav id="navbar" class="navbar">
+			  <ul>
+				<li><a class="nav-link scrollto active" href="{% url 'index' %}">Acueil</a></li>
+				<li><a class="nav-link scrollto" href="{% url 'apropos' %}">APROPOS</a></li>
+				<li><a class="nav-link scrollto" href="{% url 'Nos_services' %}"> Nos Services</a></li>
+				<li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Brigitte recrute </a></li>
+	
+			
+				<li><a class="nav-link scrollto" href="{% url 'nous_contacter' %}"> Nous Contacter</a></li>
+			  </ul>
+			  <i class="bi bi-list mobile-nav-toggle"></i>
+			</nav><!-- .navbar -->
+	
+		  </div><!-- End Header Container -->
+		</div>
+	</header>
+
+	<section>
+
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<div class="p-5 btn btn-success">
+					<h1>Bienvenu sur la page d'inscription de Brigitte </h1>
+					<h1 class="mb-3"><strong> JE M'INSCRIS CHEZ BRIGITTE </strong></h1>
+					
+				</div>
+			</div>
+		</div>
+	
+	</section>
+
+	
+
+
+	
+
+	<div class="page-content">
+		<div class="form-v6-content">
+			<div class="form-left">
+				 <!-- <img src="https://cdn.pixabay.com/photo/2018/08/17/15/29/call-3613071_1280.png " alt="form" height="450px">  -->
+              <!-- <img src=" {% static 'assets/img/conect.png ' %}" class="img-fluid" alt=""> -->
+			
+			</div>
+
+			<section id="portfolio" class="portfolio">
+				<div class="container">
+		  
+				  <div class="section-title" data-aos="fade-left">
+					<div>
+						<h1> Le Formulaire d' Adhesion </h1>
+						<i>Veuillez remplir le formulaire ci dessous !!! </i>
+
+					</div>
+					<!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+				  </div>
+
+
+				   <form class="form-detail" action="{% url 'formulaire_recrute' %}" method="POST">
+								{% csrf_token %}
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 demo-content" >
+								 <div class="form-check form-check-inline">
+									<label class="radio-inline"><input type="radio" name="genre" >Homme</label>
+								</div>
+
+								<div class="form-check form-check-inline">
+									<label class="radio-inline"><input type="radio" name="genre">Femme</label>
+								</div> 
+
+								<div class="form-group">
+									<label for="usr">Nom:</label>
+									<input type="text" class="form-control" id="usr" name="last_name">
+								</div> 
+
+								<div class="form-group">
+									<label for="usr">Prenom:</label>
+									<input type="text" class="form-control" id="usr" name="first_name" >
+								</div> 
+
+
+								<div class="form-group">
+									<label for="usr">Email:</label>
+									<input type="email" class="form-control" name="email" id="usr" required placeholder="dambrebrigitte9@gmail.com">
+								</div>
+
+								 <div class="form-group">
+									<label for="usr">Langage habituel:</label>
+									<input type="text" class="form-control" id="usr" name="langage_habituel"  >
+								</div>
+
+								<div class="form-group">
+									<label for="usr">Année de naissance:</label>
+									<input type="date" class="form-control" id="usr" name="annee_de_naissance"  >
+								</div> 
+
+								<div class="form-group">
+									<label for="usr">Entrer votre numero:</label>
+									<input type="tel" class="form-control" id="usr" name="numero_employee"  >
+								</div>
+
+								<div class="form-group">
+									<label for="usr">votre emplacement:</label>
+									<input type="text" class="form-control" id="usr" name="emplacement"  >
+								</div>
+								
+
+								<div class="form-group">
+									<label for="usr">Votre statut:</label>
+									<input type="text" class="form-control" id="usr" name="statut" >
+								</div> 
+
+								<div class="form-group">
+									<label for="comment">Laissez un commentaire sur vos savoir faire:</label>
+									<textarea class="form-control"  rows="5" id="comment" name="commentaire_sur_savoir_faire" ></textarea>
+								</div>
+								<!--
+
+								<div>
+									<label for="formFile" class="form-label"> choisi votre CV</label>
+									<input class="form-control" type="file" id="formFile" placeholder="choisir son CV" >
+								</div> -->
+
+								<div class=" emplace">
+									<button type="submit" class="btn btn-outline-success">Envoyez</button>
+								</div>
+
+								
+
+							</div>
+
+
+							<div class="col-md-6  demo-content" >
+								<img src="https://www.keacrea.com/images/pages/site/refonte/preparation-refonte.png" alt="">
+							</div>
+				
+						
+						
+
+						
+						
+						
+							
+
+
+						</div>
+
+						
+				
+				
+					</div>
+					
+					
+
+						
+
+						
+						
+						
+						
+						
+				</form> 
+				
+				</div>
+
+		
+			</section>
+				
+				
+				
+
+				
+
+			
+			
+		</div>
+	</div>
+
+	<script src=" {% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+	<script src=" {% static 'assets/vendor/aos/aos.js' %}"></script>
+	<script src=" {% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src=" {% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+	<script src=" {% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+	<script src=" {% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+	<script src=" {% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  
+	<script src=" {% static 'assets/js/main.js' %}"></script>
+	
+	{% endblock content %}
+</body>
+</html>

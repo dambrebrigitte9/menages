@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon projet</title>
+
+  <link href=" {% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href=" {% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+
+  <link href=" {% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href=" {% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+    {% block content %}
+
+
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container">
+        <div class="header-container d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <h1 class="text-light"><a href="{% url 'index' %}"><span>Brigitte</span></a></h1>
+          </div>
+  
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="{% url 'index' %}">Acueil</a></li>
+              <li><a class="nav-link scrollto" href="{% url 'apropos' %}">APROPOS</a></li>
+              <li><a class="nav-link scrollto" href="{% url 'Nos_services' %}"> Nos Services</a></li>
+              <li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Brigitte recrute </a></li>
+
+             
+              <li><a class="nav-link scrollto" href="{% url 'nous_contacter' %}"> Nous Contacter</a></li>
+              <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+  
+        </div><!-- End Header Container -->
+      </div>
+    </header>
+    <br>
+    <br>
+    
+  
+    <section id="services" class="services section-bg">
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="section-title" data-aos="fade-right">
+                <h2>Services</h2>
+                <p>Brigitte est fière de vous offrir l’un des services  qu'elle propose parmis lesquels le service d’entretien ménager .</p> <br>
+                <p> Notre équipe prend en charge  les besoins de services que vous choissirez et trouver des solutions idoines a vos  
+                  soucis et vous permettre  de profiter pleinement de votre espace de vie.</p> <br>
+            
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-md-6 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon"><i class="bi bi-cart"></i></div>
+                    <h4><a href="{% url 'service_netoyage' %}">LE NETOYAGE</a></h4>
+                    <p>Notre service de NETOYAGE consiste a vous mettre en conatct avec des gens qui ont le 
+                      profil apprprié pour repondre a vos besoin , parmis les services de netoyage  que nous disposons.</p>
+                  </div>
+                </div>
+  
+                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon"><i class="bi bi-person-square"></i></div>
+                    <h4><a href="{% url 'fille_de_menage' %}">FILLE DE MENAGE</a></h4>
+                    <p> Notre service de FILLE DE MENAGE consiste a vous mettre en contact avec une fille de menage capable de repondre a vos besoin.</p>
+                  </div>
+                </div>
+  
+                <div class="col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon"><i class="bi bi-collection"></i></div>
+                    <h4><a href="">LES CEREMONIES</a></h4>
+                    <p>Notre service dans les CEREMONIES consite a vous mettre en contact avec l'équipe  apporié pour mener a bien votre besoin pour la bonne marche de votre Ceremonie. </p>
+                  </div>
+                </div>
+  
+                <div class="col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="icon"><i class="bi bi-command"></i></div>
+                    <h4><a href=""> BESOIN DE CUISINIER </a></h4>
+                    <p>Notre service de CUISINIER a pour but de vous mettre en contact avec le cuisinier ou la cuisiniere appropié pour  le type de besoin  que vous avez .</p>
+                  </div>
+                </div>
+  
+                <div class="col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="icon"><i class="bi bi-rainbow"></i></div>
+                    <h4><a href=""> BABY-SITTINGS</a></h4>
+                    <p>Notre sercice de BABY-SITTINGS consite a vous mettre en contact avec la personne approprié que nous selectionnerons avec soin pour la garde de votre enfant.</p>
+                  </div>
+                </div>
+  
+  
+                <div class="col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="icon"><i class="bi bi-mortarboard-fill"></i></div>
+                    <h4><a href=""> EDUCATEUR POUR ENFANT</a></h4>
+                    <p>Notre service ci consite a vous mettre en conatct avec un  EDUCATEUR pour la marche du cursus scolaire de votre enfant </p>
+                  </div>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+      <script src=" {% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+      <script src=" {% static 'assets/vendor/aos/aos.js' %}"></script>
+      <script src=" {% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+      <script src=" {% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+      <script src=" {% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+      <script src=" {% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+      <script src=" {% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    
+      <script src=" {% static 'assets/js/main.js' %}"></script>
+      
+    {% endblock content %}
+    
+</body>
+</html>
