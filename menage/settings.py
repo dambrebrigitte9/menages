@@ -15,7 +15,10 @@ SECRET_KEY = 'django-insecure-wz-sbt*+c=ahj(%3h=@kbc4u7v*yg+35(v3kckkx1k8vf8iz4(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'menage7.herokuapp.com'
+    ]
 
 
 # Application definition
