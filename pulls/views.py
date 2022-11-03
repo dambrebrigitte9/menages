@@ -1,7 +1,8 @@
+from email import message
 from multiprocessing.spawn import is_forking
 from django.shortcuts import render
 from django.http import  HttpResponseRedirect,  HttpResponse
-from pulls.models import Employee,Service
+from pulls.models import Employee,Service,nous_contacter
 from pulls.forms import EmployeeForm,ServiceForm
 
 
@@ -25,9 +26,25 @@ from .forms import EmployeeForm
 
 
 def index(request):
+    if request.method == "POST":
+        first_name = request.POST.get('first_name')
+        email = request.POST.get('email')
+        titre = request.POST.get('titre')
+        laisser_un_message=request.POST.get('laisser_un_message')
+        
+
+
+        donnees = nous_contacter.objects.create(email=email,  
+        first_name=first_name, titre=titre,
+        laisser_un_message=laisser_un_message)
+                        
+        donnees.save()
+       
+    return render(request, 'posts/index.html',{'form':form})
+
     
 
-    return render(request, 'posts/index.html')
+    # return render(request, 'posts/index.html')
 
 
 

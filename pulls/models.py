@@ -50,6 +50,18 @@ class Service(models.Model):
         return self.first_name
 
 
+class nous_contacter(models.Model):
+    first_name = models.CharField(max_length=30)
+    email=models.CharField(max_length=40, default="admin@default.com")
+    titre=models.CharField(max_length=30)
+    laisser_un_message=models.CharField(max_length=1000,
+    default="votre besoin")
+    
+    
+    def __str__(self):
+        return self.first_name
+
+
 
 
 
