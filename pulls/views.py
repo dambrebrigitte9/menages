@@ -25,77 +25,25 @@ from .forms import EmployeeForm
 
 
 def index(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/index.html', context)
+    return render(request, 'posts/index.html')
 
 
 
 def brigitte(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/portfolio-details.html', context)
+   
+    return render(request, 'posts/portfolio-details.html')
 
 
 
 def bibi(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/posts.html', context)
+   
+    return render(request, 'posts/posts.html')
 
 
 
@@ -121,31 +69,14 @@ def bibi(request):
 #         'user' : user,
 #         'subjects': subjects
 #     }
-#     return render(request, 'posts/formulaire_recrute.html', context)
+#     return render(request, 'posts/formulaire_recrute.html')
 
 
 def form(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/formulaire_employee.html', context)
+   
+    return render(request, 'posts/formulaire_employee.html')
 
 
 
@@ -156,81 +87,30 @@ def form(request):
 
 
 def nos_services(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/Nos_services.html', context)
+   
+    return render(request, 'posts/Nos_services.html')
 
 
 
 
 
 def netoie(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/service_netoyage.html', context)
+   
+    return render(request, 'posts/service_netoyage.html')
 
 
 
 
 
 def habit(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/lavage_habit.html', context)
+   
+    return render(request, 'posts/lavage_habit.html')
 
 
 
@@ -257,106 +137,38 @@ def habit(request):
 #         'user' : user,
 #         'subjects': subjects
 #     }
-#     return render(request, 'posts/form_adheration.html', context)
+#     return render(request, 'posts/form_adheration.html')
 
 
 
 def contacter(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/nous_contacter.html', context)
+   
+    return render(request, 'posts/nous_contacter.html')
 
 
 
 def apropo(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/apropos.html', context)
+   
+    return render(request, 'posts/apropos.html')
 
 
 
 def form(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/formulaire_employee.html', context)
+   
+    return render(request, 'posts/formulaire_employee.html')
 
 
 def fille(request):
-    user = {
-        'first_name' : "John",
-        'last_name' : "Doe"
-    } 
+    
 
-    subjects = [
-        {
-            'title' : "projet",
-            'author': "Brigitte"
-        },
-        {
-            'title' : "ma page d'accueil",
-            'author' : "Brigitte"
-        }
-    ]
-
-    context = {
-        'user' : user,
-        'subjects': subjects
-    }
-    return render(request, 'posts/fille_de_menage.html', context)
+   
+    return render(request, 'posts/fille_de_menage.html')
 
 
 

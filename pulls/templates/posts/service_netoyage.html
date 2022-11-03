@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon projet</title>
+    <title> projet</title>
      <!-- Favicons -->
-        <link href=" {% static 'assets/img/favicon.png' %}" rel="icon">
+        <!-- <link href=" {% static 'assets/img/favicon.png' %}" rel="icon"> -->
         <link href=" {% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
@@ -54,6 +54,11 @@
   </header>
 
   <section>
+    <p></p>
+  </section>
+
+
+  <section>
     
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -87,9 +92,9 @@
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
                 <li data-filter="*" class="filter-active">Totalité de nos services</li>
-                <li data-filter=".filter-app">LAVAGES D'HABITS</li>
-                <li data-filter=".filter-card">netoyage DE MAISON</li>
-                <li data-filter=".filter-web">NETOYEZ LES FAUTEUILLES</li>
+                <li data-filter=".filter-app">LAVAGES DE LINGES</li>
+                <li data-filter=".filter-card">NETOYAGE DE MAISON</li>
+                <li data-filter=".filter-web">NETOYAGE DE FAUTEUILLES EN CUIR</li>
               </ul>
             </div>
           </div>
@@ -100,7 +105,7 @@
               <div class="portfolio-wrap">
                 <img src=" {% static 'assets/img/portfolio/portfolio-0.jpg' %}" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                 <a href="{% url 'lavage_habit' %}"> <h4> lavage d'habit</h4></a>
+                 <a href="{% url 'lavage_habit' %}"> <h4> lavage de linge</h4></a>
                   <p></p>
                   <div class="portfolio-links">
                     <a href="{% url 'lavage_habit' %}" title="More Details"><i class="bx bx-link"></i></a>
@@ -113,7 +118,7 @@
               <div class="portfolio-wrap">
                 <img src=" {% static 'assets/img/portfolio/portfolio-1.jpeg' %}" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>NETOYEZ FAUTEUILLES EN CUIR</h4>
+                  <h4>Netoyage de fauteuille en cuir</h4>
                   <p></p>
                   <div class="portfolio-links">
                     <a href="#" title="More Details"><i class="bx bx-link"></i></a>
@@ -128,7 +133,7 @@
               <div class="portfolio-wrap">
                 <img src=" {% static 'assets/img/portfolio/portfolio-2.jpeg' %}" height="250px" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Netoyez maison</h4>
+                  <h4>Netoyage de maison</h4>
                   <div class="portfolio-links">
                     <a href="#" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
@@ -148,6 +153,68 @@
     </div>
     
   </section>
+
+
+  <footer id="footer">
+
+    <div class="footer-top ">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+           
+            <p>
+              BURKINA/FASO<br>
+              <br>
+              <strong>Telephone:</strong><a href="tel:+22673693576">+226 73 69 35 76</a> <br>
+              <br>
+              <strong>Email:</strong><a href="mailto:dambrebrigitte9@gmail.com">dambrebrigitte9@gmail.com </a> <br>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-links">
+            <h4>Lien Utiles</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Acueil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'apropos' %}">Nous concernant</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Nos_services' %}"> Nos Services</a></li>
+            </ul>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Nos Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div> -->
+
+         
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4 ">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright@ 2022 <strong><span>Brigitte</span></strong>. Tout Droit Reservé!!!
+        </div>
+        <div class="credits">
+           <a href="mailto:dambrebrigitte9@gmail.com">dambrebrigitte9</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dambre-brigitte-810b3a225" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <script src=" {% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
   <script src=" {% static 'assets/vendor/aos/aos.js' %}"></script>
