@@ -205,6 +205,13 @@ def fille(request):
 #     return render(request, 'posts/formulaire_recrute.html',{'form':form})
 
 
+def redirection(request):
+    
+
+   
+    return render(request, 'posts/redirection.html')
+
+
 
 def employee(request):
     if request.method == "POST":

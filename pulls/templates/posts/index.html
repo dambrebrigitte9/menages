@@ -70,6 +70,8 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+
+  
   <section id="hero" class="d-flex align-items-center">
     <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
       <h1>Votre site d'aide menager</h1>
@@ -381,6 +383,10 @@
             <br>
 
 
+
+            
+
+
             <form action="{% url 'index' %}" method="post"  class="form-detail">
                             {% csrf_token %}
               <div class="row">
@@ -399,7 +405,10 @@
               </div>
               
               <div class="btn btn-outline-success"><button type="submit">Envoyez le Message</button></div>
+              
             </form>
+
+            
           </div>
         </div>
 
@@ -407,6 +416,8 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+
+  
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
