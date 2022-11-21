@@ -154,7 +154,8 @@ h6 {
   #header .header-container {
     /* background: #009970; */
     color: black;
-    background: rgba(117, 113, 113, 0.456);
+    /* background: rgba(2, 68, 19, 0.388); */
+    background: #009970;
   }
 
   #header .logo {

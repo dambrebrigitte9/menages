@@ -27,6 +27,7 @@ class Employee(models.Model):
     statut=models.CharField(max_length=30,default="Etudiante" )
     commentaire_sur_savoir_faire=models.CharField(max_length=200,
     default="je sais cuisiner")
+    votre_cv=models.FileField(default="file")
     
     
     def __str__(self):
