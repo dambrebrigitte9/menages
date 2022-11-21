@@ -7,10 +7,32 @@
 
 /*--------------------------------------------------------------
 # General
+
 --------------------------------------------------------------*/
+
+.bordur{
+  
+  height: 90px;
+  background:white;
+  text-align: center;
+  color: black;
+  margin-top: 80px;
+}
+.bi{
+  color: #009970;
+  /* color:  #56c053; */
+}
+.bord{
+  /* background: #56c053; */
+  background: #009970;
+  height: 15px;
+}
+
+
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  /* color: #444444; */
+  /* color:  #009970; */
 }
 
 a {
@@ -56,7 +78,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #00c28e;
+  /* background: #00c28e; */
   color: #fff;
 }
 
@@ -97,7 +119,7 @@ h6 {
 #header .logo {
   overflow: hidden;
   padding: 16px 30px 12px 30px;
-  background: #009970;
+  /* background: #009970; */
 }
 
 #header .logo h1 {
@@ -110,7 +132,8 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #fff;
+  /* color: #fff; */
+  color: black;
   text-decoration: none;
 }
 
@@ -124,12 +147,14 @@ h6 {
   #header {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     top: 0;
-    background: #009970;
+    /* background: #009970; */
   }
 
   #header.header-scrolled,
   #header .header-container {
-    background: #009970;
+    /* background: #009970; */
+    color: black;
+    background: rgba(117, 113, 113, 0.456);
   }
 
   #header .logo {

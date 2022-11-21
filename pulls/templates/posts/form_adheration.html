@@ -46,12 +46,23 @@
 
 	<body>
 		{% block content %}
+		<div class="bordur">
+			<h1 class="bi">M.menage</h1>
+			<p class="bi">FEDERATION DE GUIDE POUR SERVANTE</p>
+			 <!--<p>Federation de guide pour Servante</p>
+			<p>la solution</p> -->
+		
+		
+		  </div>
+		  <div class="bord">
+		
+		  </div>
 
 		<header id="header" class="fixed-top d-flex align-items-center">
 			<div class="container">
 			  <div class="header-container d-flex align-items-center justify-content-between">
 				<div class="logo">
-				  <h1 class="text-light"><a href="{% url 'index' %}"><span>Brigitte</span></a></h1>
+				  <h1 class="text-light"><a href="{% url 'index' %}"><span>M.menage</span></a></h1>
 				</div>
 		
 				<nav id="navbar" class="navbar">
@@ -59,7 +70,7 @@
 					<li><a class="nav-link scrollto active" href="{% url 'index' %}">Acueil</a></li>
 					<li><a class="nav-link scrollto" href="{% url 'apropos' %}">APROPOS</a></li>
 					<li><a class="nav-link scrollto" href="{% url 'Nos_services' %}"> Nos Services</a></li>
-					<li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Brigitte recrute </a></li>
+					<li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Recrutement</a></li>
 
 				
 					<li><a class="nav-link scrollto" href="{% url 'nous_contacter' %}"> Nous Contacter</a></li>
@@ -74,9 +85,9 @@
 
 		<section>
 
-			<section>
+			<!-- <section>
 				<p></p>
-			</section>
+			</section> -->
 			
 
 			<div class="jumbotron jumbotron-fluid">
@@ -101,7 +112,7 @@
 					<h2 class="bib">Veuillez remplir le formulaire ou composez le 73_69_35_76</h2>
 					<h2 class="bib">Agréez noter qu’en remplissant et soumettant ce formulaire, </h2>
 					<h2 class="bib">vous acceptez de recevoir par défaut des communications par </h2>
-					<h2 class="bib">courriel et téléphonie de la part du Groupe Brigitte  Plus.</h2>
+					<h2 class="bib">courriel et téléphonie de la part du Groupe M.menage  </h2>
 					<br>
 					<br>
 
@@ -214,29 +225,27 @@
 			  <div class="container">
 				<div class="row">
 		
-				  <div class="col-lg-4 col-md-6 footer-contact">
-					<h3>Brigitte</h3>
+				  <div class="col-lg-6 col-md-6 footer-contact">
+				   
 					<p>
-					  BURKINA-FASO<br>
-					 <br>
-					  <strong>Telephone:</strong><a href="tel:+22673693576">+226 73 69 35 76</a> <br>
-					  <strong>Email:</strong>  <a href="mailto:dambrebrigitte9@gmail.com">dambrebrigitte9@gmail.com</a>
+					  BURKINA/FASO<br>
 					  <br>
+					  <strong>Telephone:</strong><a href="tel:+22673693576">+226 73 69 35 76</a> <br>
+					  <br>
+					  <strong>Email:</strong><a href="mailto:dambrebrigitte9@gmail.com">dambrebrigitte9@gmail.com </a> <br>
 					</p>
 				  </div>
 		
-				  <div class="col-lg-4 col-md-6 footer-links">
+				  <div class="col-lg-6 col-md-6 footer-links">
 					<h4>Lien Utiles</h4>
 					<ul>
-					  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-					  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-					  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-					  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-					  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+					  <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Acueil</a></li>
+					  <li><i class="bx bx-chevron-right"></i> <a href="{% url 'apropos' %}">Nous concernant</a></li>
+					  <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Nos_services' %}"> Nos Services</a></li>
 					</ul>
 				  </div>
 		
-				  <div class="col-lg-4 col-md-6 footer-links">
+				  <!-- <div class="col-lg-4 col-md-6 footer-links">
 					<h4>Nos Services</h4>
 					<ul>
 					  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -245,15 +254,9 @@
 					  <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
 					  <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
 					</ul>
-				  </div>
-		
-				  <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
-					<h4>Join Our Newsletter</h4>
-					<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-					<form action="" method="post">
-					  <input type="email" name="email"><input type="submit" value="Subscribe">
-					</form>
 				  </div> -->
+		
+				 
 		
 				</div>
 			  </div>
@@ -263,26 +266,19 @@
 		
 			  <div class="me-md-auto text-center text-md-start">
 				<div class="copyright">
-				  &copy; Copyright@ 2022 <strong><span>BIBI</span></strong>. Tout Droit Reservé!!!
+				  &copy; Copyright@ 2022 <strong><span>M.menage</span></strong>. Tout Droit Reservé!!!
 				</div>
 				<div class="credits">
-				  <!-- All the links in the footer should remain intact. -->
-				  <!-- You can delete the links only if you purchased the pro version. -->
-				  <!-- Licensing information: https://bootstrapmade.com/license/ -->
-				  <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/ -->
-				 createur <a href="mailto:dambrebrigitte9@gmail.com">dambrebrigitte9</a>
+				   <a href="mailto:dambrebrigitte@gmail.com">dambrebrigitte9@gmail.com</a>
 				</div>
 			  </div>
 			  <div class="social-links text-center text-md-right pt-3 pt-md-0">
-				<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
 				<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
 				<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-				<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-				<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+				<a href="https://www.linkedin.com/in/dambre-M.menage-810b3a225" class="linkedin"><i class="bx bxl-linkedin"></i></a>
 			  </div>
 			</div>
-		</footer>
-
+		  </footer>
 		{% endblock content %}
 		
 	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->

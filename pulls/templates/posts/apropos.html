@@ -26,11 +26,22 @@
 </head>
 <body>
     {% block content %}
+    <div class="bordur">
+      <h1 class="bi">M.menage</h1>
+      <p class="bi">FEDERATION DE GUIDE POUR SERVANTE</p>
+       <!--<p>Federation de guide pour Servante</p>
+      <p>la solution</p> -->
+  
+  
+    </div>
+    <div class="bord">
+  
+    </div>
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container">
         <div class="header-container d-flex align-items-center justify-content-between">
           <div class="logo">
-            <h1 class="text-light"><a href="{% url 'index' %}"><span>Brigitte</span></a></h1>
+            <h1 class="text-light"><a href="{% url 'index' %}"><span>M.menage</span></a></h1>
              </div>
   
           <nav id="navbar" class="navbar">
@@ -77,9 +88,9 @@
               <li><i class="ri-check-double-line"></i>Notre Objectif est  la mise en contact des employées au employeurs en vue de resoudre le probleme de manque d'aide menager. Il s'agit de Satisfaire les besoins de la clientelle en leur offrant nos services. </li>
               <li><i class="ri-check-double-line"></i> Il s'agit  également d'assurer le placement  d'employées aux differnts besoins en fonction des services que nous proposons.</li>
               <!-- <li><i class="ri-check-double-line"></i>Satisfaire les besoins du la clientelle en leur offrant nos services.</li> -->
-              <li><i class="ri-check-double-line"></i>Brigittte offre egalement le Recrutement de personne apte pour adherer a son équipe.
+              <li><i class="ri-check-double-line"></i>M.menage offre egalement le Recrutement de personne apte pour adherer a son équipe.
                 Nous recherchons des gens dignes de confiance, ayant la satisfaction de notre clientèle à cœur et prenant le temps de bien faire les choses. </li>
-              <li><i class="ri-check-double-line"></i> Brigitte recherche des personnes capablent, non seulement  capable de rendre les résidences de nos clients plus propres, 
+              <li><i class="ri-check-double-line"></i> M.menage recherche des personnes capablent, non seulement  capable de rendre les résidences de nos clients plus propres, 
                 mais d’offrir à ceux-ci la paix d’esprit et le bonheur d'un Service bien fait.</li>
 
             </ul>
@@ -117,14 +128,14 @@
                     <div class="member" data-aos="zoom-in" data-aos-delay="100">
                       <div class="pic"><img src=" {% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
                       <div class="member-info">
-                        <h4>DAMBRE BRIGITTE</h4>
+                        <h4>DAMBRE Brigitte</h4>
                         <span>chief</span>
-                        <p>Specialiste chargé de la bonne mise en relation et createur du projet</p>
+                        <p>Createur du projet</p>
                         <div class="social">
                           <a href="#"><i class="ri-twitter-fill"></i></a>
                           <a href="#"><i class="ri-facebook-fill"></i></a>
                           <!-- <a href="#"><i class="ri-instagram-fill"></i></a> -->
-                          <a href="https://www.linkedin.com/in/dambre-brigitte-810b3a225"> <i class="ri-linkedin-box-fill"></i> </a>
+                          <a href="https://www.linkedin.com/in/dambre-M.menage-810b3a225"> <i class="ri-linkedin-box-fill"></i> </a>
                         </div>
                       </div>
                     </div>
@@ -134,14 +145,14 @@
                     <div class="member" data-aos="zoom-in" data-aos-delay="200">
                       <div class="pic"><img src=" {% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
                       <div class="member-info">
-                        <h4>TAPSOBA ALICE NICOL</h4>
+                        <h4>INCONNU</h4>
                         <span>sous chief</span>
                         <p>Specialiste chargé de la bonne marche du site</p>
                         <div class="social">
                           <a href="#"><i class="ri-twitter-fill"></i></a>
                           <a href="#"><i class="ri-facebook-fill"></i></a>
                           <!-- <a href="#"><i class="ri-instagram-fill"></i></a> -->
-                          <a href="https://www.linkedin.com/in/dambre-brigitte-810b3a225"> <i class="ri-linkedin-box-fill"></i> </a>
+                          <a href="https://www.linkedin.com/in/dambre-M.menage-810b3a225"> <i class="ri-linkedin-box-fill"></i> </a>
                         </div>
                       </div>
                     </div>
@@ -152,9 +163,72 @@
     
               </div>
             </div>
+
+
     
           </div>
         </section>
+
+        <footer id="footer">
+
+          <div class="footer-top ">
+            <div class="container">
+              <div class="row">
+      
+                <div class="col-lg-6 col-md-6 footer-contact">
+                 
+                  <p>
+                    BURKINA/FASO<br>
+                    <br>
+                    <strong>Telephone:</strong><a href="tel:+22673693576">+226 73 69 35 76</a> <br>
+                    <br>
+                    <strong>Email:</strong><a href="mailto:dambrebrigitte9@gmail.com">dambrebrigitte9@gmail.com </a> <br>
+                  </p>
+                </div>
+      
+                <div class="col-lg-6 col-md-6 footer-links">
+                  <h4>Lien Utiles</h4>
+                  <ul>
+                    <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Acueil</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="{% url 'apropos' %}">Nous concernant</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Nos_services' %}"> Nos Services</a></li>
+                  </ul>
+                </div>
+      
+                <!-- <div class="col-lg-4 col-md-6 footer-links">
+                  <h4>Nos Services</h4>
+                  <ul>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                    <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                  </ul>
+                </div> -->
+      
+               
+      
+              </div>
+            </div>
+          </div>
+      
+          <div class="container d-md-flex py-4 ">
+      
+            <div class="me-md-auto text-center text-md-start">
+              <div class="copyright">
+                &copy; Copyright@ 2022 <strong><span>Brigitte</span></strong>. Tout Droit Reservé!!!
+              </div>
+              <div class="credits">
+                 <a href="mailto:dambrebrigitte9@gmail.com">dambrebrigitte9@gmail.com</a>
+              </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/dambre-brigitte-810b3a225" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </footer>
         <script src=" {% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
         <script src=" {% static 'assets/vendor/aos/aos.js' %}"></script>
         <script src=" {% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>

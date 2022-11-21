@@ -35,11 +35,22 @@
 </head>
 <body>
     {% block content %}
+    <div class="bordur">
+      <h1 class="bi">M.menage</h1>
+      <p class="bi">FEDERATION DE GUIDE POUR SERVANTE</p>
+       <!--<p>Federation de guide pour Servante</p>
+      <p>la solution</p> -->
+  
+  
+    </div>
+    <div class="bord">
+  
+    </div>
 <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container">
       <div class="header-container d-flex align-items-center justify-content-between">
         <div class="logo">
-          <h1 class="text-light"><a href="{% url 'index' %}"><span>Brigitte</span></a></h1>
+          <h1 class="text-light"><a href="{% url 'index' %}"><span>M.menage</span></a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
@@ -49,7 +60,7 @@
             <li><a class="nav-link scrollto active" href="{% url 'index' %}">Acueil</a></li>
             <li><a class="nav-link scrollto" href="{% url 'apropos' %}">APROPOS</a></li>
             <li><a class="nav-link scrollto" href="{% url 'Nos_services' %}"> Nos Services</a></li>
-            <li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Brigitte recrute </a></li>
+            <li><a class="nav-link scrollto" href="{% url 'formulaire_employee' %}">Recrutement </a></li>
 
            
             <li><a class="nav-link scrollto" href="{% url 'nous_contacter' %}"> Nous Contacter</a></li>
