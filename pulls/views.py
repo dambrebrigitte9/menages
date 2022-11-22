@@ -5,6 +5,11 @@ from django.http import  HttpResponseRedirect,  HttpResponse
 from pulls.models import Employee,Service,nous_contacter
 from pulls.forms import EmployeeForm,ServiceForm
 
+from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
+from django.views.generic import TemplateView
+# from EmployeeForm import EmployeeForm
+
 
 
 
@@ -225,15 +230,14 @@ def employee(request):
         genre = request.POST.get('genre')
         statut=request.POST.get('statut')
         commentaire_sur_savoir_faire=request.POST.get('commentaire_sur_savoir_faire')
-        # experience = request.POST.get('experience')
-        # education = request.POST.get('education')
+        votre_cv=request.POST.get('votre_cv')
        
 
 
         donnees = Employee.objects.create(email=email, last_name=last_name, 
         first_name=first_name, langage_habituel=langage_habituel, annee_de_naissance=annee_de_naissance,
         numero_employee=numero_employee, emplacement=emplacement ,genre=genre,
-        statut=statut, commentaire_sur_savoir_faire=commentaire_sur_savoir_faire)
+        statut=statut, commentaire_sur_savoir_faire=commentaire_sur_savoir_faire, votre_cv=votre_cv)
                         
         donnees.save()
        
@@ -266,6 +270,34 @@ def adheration(request):
         donnees.save()
 
     return render(request, 'posts/form_adheration.html',{'form':form})
+
+
+
+
+
+
+
+# class EmployeeImage(TemplateView):
+#     form = EmployeeForm
+#     template_name = 'votre_cv.html'
+
+#     def post(self, request, *args, **kwargs):
+#         form = EmployeeForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form.save()
+#             return HttpResponseRedirect(reverse_lazy('home', kwargs={'pk': pk}))
+#         context = self.get_context_data(form=form)
+#         return self.render_to_response(context)   
+          
+
+#     def get(self, request, *args, **kwargs):
+#         return self.post(request, *args, **kwargs)
+
+def votre_cv(request):
+    
+
+   
+    return render(request, 'posts/votre_cv.html')
 
 
 

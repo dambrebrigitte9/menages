@@ -96,7 +96,10 @@ class EmployeeForm(forms.Form):
 
     class Meta:
         model=Employee
-        fields='__all__'
+        # fields='__all__'
+        fields = ['first_name', 'votre_cv'] 
+
+     
 
 
 
@@ -107,3 +110,14 @@ class ServiceForm(forms.Form):
     class Meta:
         model=Service
         fields='__all__'
+
+class EmployeeImage(forms.Form):
+
+
+    class Meta:
+        model=Service
+        fields='__all__'
+
+
+
+

@@ -13,6 +13,7 @@ from datetime import datetime, date
 from django.db import models #import the models package. This line is already existing as soon as we use 'startapp'
 from django.db.models import IntegerField, Model
 from django.core.validators import  MaxValueValidator, MinValueValidator 
+from django.views.generic import TemplateView
 #Must inherit from Django Model class
 class Employee(models.Model):
     GENRE = (("HOMME",'HOMME'),("FEMME","FEMME"))
@@ -27,7 +28,7 @@ class Employee(models.Model):
     statut=models.CharField(max_length=30,default="Etudiante" )
     commentaire_sur_savoir_faire=models.CharField(max_length=200,
     default="je sais cuisiner")
-    votre_cv=models.FileField(default="file")
+    votre_cv=models.FileField(upload_to='uploads/',default="file")
     
     
     def __str__(self):
@@ -61,6 +62,11 @@ class nous_contacter(models.Model):
     
     def __str__(self):
         return self.first_name
+
+
+
+    
+    
 
 
 

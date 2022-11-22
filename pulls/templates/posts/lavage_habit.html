@@ -21,6 +21,11 @@
   <link href=" {% static 'assets/css/style.css' %}" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .bib{
+        color: cadetblue;
+      }
+  </style>
 
 
 </head>
@@ -57,7 +62,7 @@
                 <li><a class="nav-link scrollto" href="{% url 'nous_contacter' %}"> Nous Contacter</a></li>
                 <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
               </ul>
-              <i class="bi bi-list mobile-nav-toggle"></i>
+              <i class="bi bi-list mobile-nav-toggle">Menu</i>
             </nav><!-- .navbar -->
     
           </div><!-- End Header Container -->
@@ -75,7 +80,7 @@
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <div class="p-5 btn btn-success">
+                <div class="p-5 btn btn-outline-success">
                     <h1 class="mb-3">BIENVENU!</h1>
                     <h4 class="mb-3">Lorsque vous nous contacter, 
                         M.menage, se charge de resoudre votre probleme, en vous mettant en contact avec la bonne personne , 
@@ -94,41 +99,36 @@
           </div>
 
 
-
           <div class="container">
-           
-              <div class="col-md-6 demo-content" >
-                <img src="https://www.deco.fr/sites/default/files/styles/amp_1200_wide_no_upscale/public/2021-01/shutterstock_305739509.webp?itok=0H8PCg1S" alt="" height="350px">
+            <div class="row">
+                <div class="col-md-6 demo-content" >
+                  <img src="https://www.deco.fr/sites/default/files/styles/amp_1200_wide_no_upscale/public/2021-01/shutterstock_305739509.webp?itok=0H8PCg1S" alt="" height="350px">
+                 
 
-              </div>
+                </div>
+                <div class="col-md-6 demo-content" >
+                  <h2 > Cette section  concerne les renseignements pour le processus
+                    du service de lavage de vetement</h2>                  <br>
+                               <hr class="my-4">
 
-            
-
-              <br>
-               
-              <!-- <hr class="my-4"> -->
-              <h3 class="bib">Veuillez  le lire tres attentivement</h3>
-                           
+                            <h3 class="bib">Veuillez  le lire tres attentivement</h3>
                             <br>
-
-            <div class="col-md-6 demo-content" >
-              <h2 class="bib"> Cette section  concerne les renseignements pour le processus
-               du service de lavage de vetement</h2> <br>
-               <br>
-               <hr class="my-4"> 
-                <p class="bibi">Nous allions notre savoir-faire à une efficacité qui dépassera vos attentes.
-                  Nous intervenons pour resoudre votre besoin en fonction de votre  choix. 
-                  Les équipes de M.menage suivent une méthode précise pour le lavage de vos vetement 
-                   ,en vous assurant un travail bien fait. Si nos professionnels voient
-                    qu’ils peuvent en faire un peu plus, ils n’hésiteront
-                  pas à s’assurer que leur travail fait votre bonheur !</p>
+                            <p class="bibi">Nous allions notre savoir-faire à une efficacité qui dépassera vos attentes.
+                              Nous intervenons pour resoudre votre besoin en fonction de votre  choix. 
+                              Les équipes de M.menage suivent une méthode précise pour le lavage de vos vetement 
+                              ,en vous assurant un travail bien fait. Si nos professionnels voient
+                                qu’ils peuvent en faire un peu plus, ils n’hésiteront
+                              pas à s’assurer que leur travail fait votre bonheur !</p>
+                    
+                </div>
+    
             </div>
-
-
-            <a class=" btn btn-success btn-lg" href="{% url 'form_adheration' %}" role="button">Estimation en ligne</a>
-
-
-          </div>
+        </div>
+        <br>
+        <br>
+        <a class=" btn btn-success btn-lg" href="{% url 'form_adheration' %}" role="button">estimation en ligne</a>
+    
+         
            
 
 
@@ -145,7 +145,7 @@
 
 
         
-        </div>
+        </div> 
 
 
           

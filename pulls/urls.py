@@ -19,6 +19,7 @@ urlpatterns = [
     path('fille_de_menage', views.fille, name='fille_de_menage'),
     path('formulaire_recrute', views.employee, name='formulaire_recrute'),
     path('redirection', views.redirection, name='redirection'),
+    path('votre_cv', views.votre_cv, name='votre_cv'),
 
 
 
