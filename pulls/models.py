@@ -45,13 +45,13 @@ class Service(models.Model):
     ville=models.CharField(max_length=40)
     langage_habituel=models.CharField(max_length=30)
     service_choisis=models.CharField(max_length=50)
-    # moment_pour_vous_contacter =(
-    #             ("1", "30 minute- 1heure"),
-    #             ("2", "1heure- 2heure"),
-    #             ("3", "3heure- 4heure"),
-    #             ("4", "peu importe"), 
-    #             )
-    # moment_pour_vous_contacter = models.CharField(max_length=100,choices=moment_pour_vous_contacter, nul=True)
+    moment_pour_vous_contacter =(
+                ("1", "30 minute- 1heure"),
+                ("2", "1heure- 2heure"),
+                ("3", "3heure- 4heure"),
+                ("4", "peu importe"), 
+                )
+    moment_pour_vous_contacter = models.CharField(max_length=100,choices=moment_pour_vous_contacter,default="30 minute- 1heure")
     
    
 
