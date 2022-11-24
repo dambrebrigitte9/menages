@@ -41,7 +41,7 @@ class Service(models.Model):
     email=models.EmailField(max_length=40, default="admin@default.com")
     telephone_principale=models.CharField(max_length=8, default="73693576")
     telephone_secondaire=models.CharField(max_length=8, null=True)
-    emplacement=models.CharField(max_length=30)
+    emplacement=models.CharField(max_length=30,default="12OO logement")
     ville=models.CharField(max_length=40)
     langage_habituel=models.CharField(max_length=30)
     service_choisis=models.CharField(max_length=50)
@@ -53,6 +53,7 @@ class Service(models.Model):
     #             )
     # moment_pour_vous_contacter = models.CharField(max_length=100,choices=moment_pour_vous_contacter, nul=True)
     
+   
 
 
     def __str__(self):
@@ -80,3 +81,11 @@ class nous_contacter(models.Model):
 
 
 
+# moment_pour_vous_contacter =(
+#                 ("1", "30 minute- 1heure"),
+#                 ("2", "1heure- 2heure"),
+#                 ("3", "3heure- 4heure"),
+#                 ("4", "peu importe"), 
+#                 )
+# moment_pour_vous_contacter = models.CharField(max_length=100,choices=moment_pour_vous_contacter, nul=True)
+    
