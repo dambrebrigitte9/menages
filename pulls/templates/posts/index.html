@@ -32,6 +32,17 @@
 
   <!-- Template Main CSS File -->
   <link href=" {% static 'assets/css/style.css' %}" rel="stylesheet">
+  <style>
+    .milieu{
+      text-align: center;
+      font-size: 15px;
+      color: rgb(62, 76, 104);
+    }
+    .col{
+      color: rgb(15, 139, 98);
+    }
+    
+  </style>
 
   <!-- =======================================================
   * Template Name: Bethany - v4.9.1
@@ -59,6 +70,7 @@
 
    <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container">
+
       <div class="header-container d-flex align-items-center justify-content-between">
         <div class="logo">
           <h1 class="text-light"><a href="{% url 'index' %}"><span>M.menage</span></a></h1>
@@ -106,6 +118,22 @@
   </div> -->
 
   <!-- End Hero -->
+  <br>
+<div class="milieu">
+  <p class="milieu"> Si vous êtes sur cet article, c’est peut-être parce que vous recherchez une aide </p>
+  <p class="milieu">  menager en rapport avec les services que nous proposons!  Si vous souhaitez en savoir</p>
+  <p class="milieu"> plus sur ce service ou sur le fonctionnement, vous êtes au bon endroit !</p>
+
+  <p class="milieu">Aujourd’hui les tâches quotidiennes prennent beaucoup de temps.</p>
+  <p class="milieu"> Que ce soit les courses, le ménage, la corvée de linge ou la vaisselle…</p>
+  <p class="milieu"> les tâches chronophages ne cessent de s’accumuler.</p>
+  <p class="milieu">Si vous souhaitez économisez votre temps et vous débarrasser</p>
+  <p class="milieu"> simplement de la corvée de linge,ou autres, il ne reste plus qu’à passer commande.</p>
+  <p class="milieu">Pour le moment, notre service est disponible à Ouagadougou mais nous nous développons
+  <p class="milieu"> dans de nouvelles villes ! Pour plus d’infos n’hésitez pas à nous contacter.</p>
+
+         
+</div>
 
   <main id="main">
 
@@ -120,13 +148,18 @@
       <div class="container">
 
         <div class="row content">
-          
 
           
 
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
+          <!-- <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100"> -->
+            <!-- <img src="https://t4.ftcdn.net/jpg/00/64/01/93/500_F_64019332_GDcOpg9RuASe8kAZOKdGF2FleeRcE1YK.jpg" alt=""> -->
+            <!-- <img src="https://img-0.journaldunet.com/Zbyr5LhpHwBMQrRFmdc-XYjtUSg=/800x/smart/6ec04b9a87764e3298306fe3979d2ca6/ccmcms-jdn/2189061.jpg" alt="" height="300px"> -->
+          <!-- </div> -->
+
+
+          <!-- <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200"> -->
             
-            <h2>Mission</h2> 
+            <h2 class="col">Objectif</h2> 
             <ul>
               <li><i class="ri-check-double-line"></i>Notre Objectif est  la mise en contact des employées au employeurs en vue de resoudre le probleme de manque d'aide menager.  </li>
               <li><i class="ri-check-double-line"></i> Il s'agit  également d'assurer le placement  d'employées aux differnts besoins en fonction des services que nous proposons.</li>
@@ -138,17 +171,13 @@
 
 
             </ul>
+
             <p class="fst-italic"> 
             </p>
-          </div>
+          <!-- </div> -->
 
 
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="https://i0.wp.com/catapult.fi/wp-content/uploads/2020/08/techsolutions.png?fit=1101%2C738&ssl=1" class="img-fluid" alt=""> 
-
-            
-          </div>
-
+          
         </div>
 
       </div>
@@ -304,7 +333,7 @@
 
 
 
-    
+<!--     
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
@@ -330,7 +359,7 @@
                   
                   </div>
                 </div>
-                 <!-- End testimonial item  -->
+                  End testimonial item 
 
               <div class="swiper-slide">
                   <div class="testimonial-item">
@@ -363,7 +392,7 @@
         </div>
 
       </div>
-    </section> 
+    </section>  -->
     <!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
@@ -373,6 +402,10 @@
 <!-- End Contact Section -->
 
   </main><!-- End #main -->
+  <!-- <p class="cole">Voir <a href="{% url 'Nos_services' %}"> Nos Service</a></p> -->
+  <p>Pour plus d'information concernant nos services, veuillez consulter notre Rubrique :</p>
+  <!-- <button><a href="{% url 'Nos_services' %}">  nos Service</a></button> -->
+  <a class=" btn btn-success btn-lg" href="{% url 'Nos_services' %}" role="button">Nos Services</a>
 
   
 
@@ -403,17 +436,7 @@
             </ul>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Nos Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div> -->
-
+          
          
 
         </div>

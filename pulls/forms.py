@@ -105,18 +105,17 @@ class EmployeeForm(forms.Form):
 
 
 class ServiceForm(forms.Form):
-
-
+   
     class Meta:
         model=Service
         fields='__all__'
 
-class EmployeeImage(forms.Form):
+# class EmployeeImage(forms.Form):
 
 
-    class Meta:
-        model=Service
-        fields='__all__'
+#     class Meta:
+#         model=Service
+#         fields='__all__'
 
 
 

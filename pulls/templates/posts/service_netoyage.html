@@ -24,6 +24,11 @@
 
         <!-- Template Main CSS File -->
         <link href=" {% static 'assets/css/style.css' %}" rel="stylesheet">
+      <style>
+        .mb-3{
+        color: black;
+      }
+      </style>
 
         
 </head>
@@ -73,7 +78,7 @@
     
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-          <div class="p-5 btn btn-outline-success">
+          <div class="p-5 btn btn-outline">
               <h1 class="mb-3">BIENVENU!</h1>
               <h4 class="mb-3">Lorsque vous nous contacter, 
                   M.menage, se charge de resoudre votre probleme, en vous mettant en contact avec la bonne personne , 
@@ -129,10 +134,10 @@
               <div class="portfolio-wrap">
                 <img src=" {% static 'assets/img/portfolio/portfolio-1.jpeg' %}" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Netoyage de fauteuille en cuir</h4>
+                  <a href="{% url 'fauteuille_en_cuir' %}"><h4>Netoyage de fauteuille en cuir</h4></a>
                   <p></p>
                   <div class="portfolio-links">
-                    <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                    <a href="{% url 'fauteuille_en_cuir' %}" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>

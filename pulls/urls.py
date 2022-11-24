@@ -20,6 +20,8 @@ urlpatterns = [
     path('formulaire_recrute', views.employee, name='formulaire_recrute'),
     path('redirection', views.redirection, name='redirection'),
     path('votre_cv', views.votre_cv, name='votre_cv'),
+    path('fauteuille_en_cuir', views.fauteuille, name='fauteuille_en_cuir'),
+
 
 
 

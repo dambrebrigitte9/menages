@@ -29,7 +29,7 @@ class Employee(models.Model):
     commentaire_sur_savoir_faire=models.CharField(max_length=200,
     default="je sais cuisiner")
     votre_cv=models.FileField(upload_to='uploads/',default="file")
-    
+   
     
     def __str__(self):
         return self.last_name
@@ -45,7 +45,14 @@ class Service(models.Model):
     ville=models.CharField(max_length=40)
     langage_habituel=models.CharField(max_length=30)
     service_choisis=models.CharField(max_length=50)
-
+    # moment_pour_vous_contacter =(
+    #             ("1", "30 minute- 1heure"),
+    #             ("2", "1heure- 2heure"),
+    #             ("3", "3heure- 4heure"),
+    #             ("4", "peu importe"), 
+    #             )
+    # moment_pour_vous_contacter = models.CharField(max_length=100,choices=moment_pour_vous_contacter, nul=True)
+    
 
 
     def __str__(self):
