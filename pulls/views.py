@@ -257,14 +257,14 @@ def adheration(request):
         ville=request.POST.get('ville')
         langage_habituel = request.POST.get('langage_habituel')
         service_choisis = request.POST.get('service_choisis')
-        option= request.POST.get('moment_pour_vous_contacter')
+        # option= request.POST.get('moment_pour_vous_contacter')
 
 
 
         donnees = Service.objects.create(email=email, last_name=last_name, 
         first_name=first_name, langage_habituel=langage_habituel, ville=ville,
         telephone_principale=telephone_principale,telephone_secondaire=telephone_secondaire,  emplacement=emplacement ,
-        service_choisis=service_choisis, option=option)
+        service_choisis=service_choisis)
                         
         
         donnees.save()
