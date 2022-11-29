@@ -21,6 +21,8 @@ urlpatterns = [
     path('redirection', views.redirection, name='redirection'),
     path('votre_cv', views.votre_cv, name='votre_cv'),
     path('fauteuille_en_cuir', views.fauteuille, name='fauteuille_en_cuir'),
+    path('netoyage_maison', views.netoyage_maison, name='netoyage_maison'),
+
 
 
 

@@ -149,9 +149,9 @@
               <div class="portfolio-wrap">
                 <img src=" {% static 'assets/img/portfolio/portfolio-2.jpeg' %}" height="250px" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Netoyage de maison</h4>
+                  <a href="{% url 'netoyage_maison' %}"><h4>Netoyage de domicile</h4></a>
                   <div class="portfolio-links">
-                    <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                    <a href="{% url 'netoyage_maison' %}" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>

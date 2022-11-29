@@ -305,6 +305,12 @@ def fauteuille(request):
    
     return render(request, 'posts/fauteuille_en_cuir.html')
 
+def netoyage_maison(request):
+    
+
+   
+    return render(request, 'posts/netoyage_maison.html')
+
 
 
 
